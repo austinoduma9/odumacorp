@@ -71,7 +71,8 @@ body{
     #search-area{
         color: #605f5f;
         display: flex;
-        background-color: rgba(145, 145, 145, 0.308);
+        // background-color: rgba(145, 145, 145, 0.308);
+        background-color: red;
         border: solid 1px rgba(234, 234, 234, 0.811);
         width: 400px;
         // height: 30px;
@@ -89,16 +90,9 @@ body{
         padding: 5px 0px;
     }
     .container{
-        // width: 100%;
-        // justify-content: center;
-        // align-content: center;
-        // background-color: #005050;
-        // justify-self: center;
         display: flex;
         justify-content: space-evenly;
-
         #mid{
-         // flex-direction: row;
             display: flex;
             flex-direction: row;
             // justify-content: space-evenly;
