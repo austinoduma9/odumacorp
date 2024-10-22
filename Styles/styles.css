@@ -560,7 +560,7 @@ body .icon {
     min-width: 0px;
     padding: unset;
     justify-self: unset;
-    position: fixed;
+    position: absolute;
     margin-bottom: 0px;
   }
   body .nav-bar img {
@@ -591,27 +591,23 @@ body .icon {
     border-radius: unset;
     margin-top: unset;
     margin-bottom: unset;
-    background-color: unset;
     color: #636363;
     display: flex;
     justify-content: space-evenly;
-    gap: unset;
+    gap: 1px;
     align-content: unset;
     justify-self: unset;
     padding: 5px;
   }
   body .nav-bar nav ul li {
     visibility: visible;
-    display: unset;
     font-size: 10px;
     align-self: unset;
     max-width: unset;
-    width: 30px;
-    height: 30px;
-    display: block;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 0px 0;
+    display: block;
+    padding: 0px;
   }
   body .nav-bar nav ul li:hover {
     scale: 1.5;
@@ -621,9 +617,10 @@ body .icon {
     -o-object-fit: cover;
        object-fit: cover;
     background: linear-gradient(rgb(4, 77, 146), blue);
-    border-radius: 50px;
+    border-radius: 100%;
     padding: 5px;
     border: unset;
+    filter: opacity(85%);
     transform: translateY(-15px);
   }
   body .nav-bar nav ul li:nth-last-of-type(1) {
@@ -645,55 +642,40 @@ body .icon {
     content: url("/images/notification.png");
   }
   body .search {
-    height: 50px;
-    padding: unset;
-    justify-content: end;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
   }
   body .search input {
     height: -moz-fit-content;
     height: fit-content;
-    width: unset;
+    width: 200px;
     outline: unset;
+    justify-self: center;
+    background-color: rgb(254, 254, 254);
   }
   body .search input:hover {
-    scale: unset;
+    width: 50%;
   }
   body .search button {
-    right: 20px;
+    position: absolute;
+    right: 0px;
     width: -moz-fit-content;
     width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    top: -10px;
+    height: unset;
+    top: 0px;
     visibility: hidden;
   }
   body .search button:hover {
     scale: 1.2;
   }
   body .search button::after {
-    display: flex;
-    padding: 5px;
-    border-radius: 40px;
-    margin-left: -10px;
-    height: -moz-fit-content;
-    height: fit-content;
-    background-size: 20px;
+    height: unset;
     visibility: visible;
     content: url("/images/icons8-search-50.png");
-  }
-  body #search-area {
-    position: relative;
-    right: 0;
-    background-color: rgb(254, 254, 254);
-    border: unset;
-    align-self: center;
-    width: 320px;
-    padding: 5px;
-    height: unset;
-    border-radius: 10px;
-    align-self: center;
-    align-items: unset;
-    margin: 15px 0 0 0px;
   }
   body .actions {
     width: 100%;
@@ -703,7 +685,7 @@ body .icon {
     justify-content: center;
     justify-self: unset;
     align-self: unset;
-    padding: 10px;
+    padding: 5px;
   }
   body .container {
     width: -moz-fit-content;
@@ -833,7 +815,6 @@ body .icon {
     overflow: hidden;
     display: -webkit-box;
     max-width: unset;
-    gap: 5px;
     justify-content: space-evenly;
   }
   body .container #mid .center .that-viewed .tile-container .tile {
@@ -862,8 +843,7 @@ body .icon {
   body .container #mid .center .left-section .tile-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 5px;
+    justify-content: space-evenly;
     overflow: hidden;
   }
   body .container #mid .center .left-section .tile-section img {
