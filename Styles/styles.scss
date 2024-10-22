@@ -598,22 +598,22 @@ body{
                 // background-color: rebeccapurple;
                 color:unset;
                 display: flex;
-                justify-content:space-between;
+                justify-content:space-around;
                 // gap: 1px;
                 align-content: unset;
                 justify-self: unset;
-                padding: 5px 40px;
+                padding: 5px 0px;
                 li{
                     visibility: visible;
                     // display:flex;
-                    font-size: 10px;
+                    font-size: unset;
                     align-self: unset;
                     max-width: unset;
-                    width: fit-content;
-                    // height: 30px;
+                    width: 30px;
+                    height: 30px;
                     // display: block;
                     // width: fit-content;
-                    padding:  0px;
+                    padding:  10px;
                     // border-radius: 50%;
                     // background-color: #005050;
                     &:hover{

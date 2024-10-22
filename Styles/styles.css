@@ -593,19 +593,19 @@ body .icon {
     margin-bottom: unset;
     color: unset;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: unset;
     justify-self: unset;
-    padding: 5px 40px;
+    padding: 5px 0px;
   }
   body .nav-bar nav ul li {
     visibility: visible;
-    font-size: 10px;
+    font-size: unset;
     align-self: unset;
     max-width: unset;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 0px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
   }
   body .nav-bar nav ul li:hover {
     scale: 1.5;
