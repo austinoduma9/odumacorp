@@ -591,13 +591,12 @@ body .icon {
     border-radius: unset;
     margin-top: unset;
     margin-bottom: unset;
-    color: #636363;
+    color: unset;
     display: flex;
-    justify-content: space-evenly;
-    gap: 1px;
+    justify-content: space-between;
     align-content: unset;
     justify-self: unset;
-    padding: 5px;
+    padding: 5px 40px;
   }
   body .nav-bar nav ul li {
     visibility: visible;
@@ -606,7 +605,6 @@ body .icon {
     max-width: unset;
     width: -moz-fit-content;
     width: fit-content;
-    display: block;
     padding: 0px;
   }
   body .nav-bar nav ul li:hover {
@@ -621,7 +619,7 @@ body .icon {
     padding: 5px;
     border: unset;
     filter: opacity(85%);
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
   body .nav-bar nav ul li:nth-last-of-type(1) {
     content: url("/images/home.png");
