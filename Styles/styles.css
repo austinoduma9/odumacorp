@@ -606,20 +606,18 @@ body .icon {
     width: 30px;
     height: 30px;
     padding: 10px;
+    border-radius: 50px 50px 0px 0;
+    border: 1px solid rgba(206, 206, 206, 0.329);
   }
   body .nav-bar nav ul li:hover {
-    scale: 1.5;
-    transition: ease-in-out 0.3s;
-    box-shadow: 2px 2px 3px black;
-    color: #b0afaf;
-    -o-object-fit: cover;
-       object-fit: cover;
+    animation: hover-nav ease 1s 1;
+    transition: 1s;
     background: linear-gradient(rgb(4, 77, 146), blue);
-    border-radius: 100%;
-    padding: 5px;
-    border: unset;
-    filter: opacity(85%);
     transform: translateY(-10px);
+    box-shadow: 2px 2px 3px black;
+    padding: 5px;
+    border-radius: 50%;
+    filter: opacity(85%);
   }
   body .nav-bar nav ul li:nth-last-of-type(1) {
     content: url("/images/home.png");
@@ -638,6 +636,35 @@ body .icon {
   }
   body .nav-bar nav ul li:nth-last-of-type(6) {
     content: url("/images/notification.png");
+  }
+  @keyframes hover-nav {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      background: linear-gradient(rgb(4, 77, 146), blue);
+      transform: translateY(-3px);
+    }
+    50% {
+      background: linear-gradient(rgb(4, 77, 146), blue);
+      transform: translateY(-5px);
+    }
+    100% {
+      background: linear-gradient(rgb(4, 77, 146), blue);
+      transform: translateY(-10px);
+      box-shadow: 2px 2px 3px black;
+      border-radius: 50%;
+    }
+    50% {
+      background: linear-gradient(rgb(4, 77, 146), blue);
+      transform: translateY(-5px);
+      box-shadow: 2px 2px 3px black;
+      padding: 5px;
+    }
+    0% {
+      background: linear-gradient(rgb(4, 77, 146), blue);
+      transform: translateY(0px);
+    }
   }
   body .search {
     height: -moz-fit-content;
@@ -760,6 +787,9 @@ body .icon {
     width: fit-content;
     display: flex;
     flex-direction: column;
+  }
+  body .container #mid .center .idea-media-section img {
+    background: radial-gradient(red, purple);
   }
   body .container #mid .center .card {
     border-radius: unset;
