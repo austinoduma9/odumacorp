@@ -596,7 +596,8 @@ body .icon {
     justify-content: space-around;
     align-content: unset;
     justify-self: unset;
-    padding: 5px 0px;
+    padding: 5px 0 5px 0px;
+    transform: rotateY(180deg);
   }
   body .nav-bar nav ul li {
     visibility: visible;
@@ -605,22 +606,21 @@ body .icon {
     max-width: unset;
     width: 30px;
     height: 30px;
-    padding: 10px;
-    border-radius: 50px 50px 0px 0;
+    padding: 0 0 10px 0px;
     border: 1px solid rgba(206, 206, 206, 0.329);
   }
   body .nav-bar nav ul li:hover {
-    animation: hover-nav ease 1s 1;
+    animation: hover-nav ease-in-out 0.1s;
     transition: 1s;
     background: linear-gradient(rgb(4, 77, 146), blue);
     transform: translateY(-10px);
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.415);
     padding: 5px;
     border-radius: 50%;
     filter: opacity(85%);
   }
   body .nav-bar nav ul li:nth-last-of-type(1) {
-    content: url("/images/home.png");
+    content: url("/images/notification.png");
   }
   body .nav-bar nav ul li:nth-last-of-type(2) {
     content: url("/images/newspaper.png");
@@ -635,7 +635,7 @@ body .icon {
     content: url("/images/message.png");
   }
   body .nav-bar nav ul li:nth-last-of-type(6) {
-    content: url("/images/notification.png");
+    content: url("/images/OdumaCorp-icon-small.png");
   }
   @keyframes hover-nav {
     0% {
@@ -788,8 +788,10 @@ body .icon {
     display: flex;
     flex-direction: column;
   }
-  body .container #mid .center .idea-media-section img {
-    background: radial-gradient(red, purple);
+  body .container #mid .center .idea-media-section img:hover {
+    visibility: visible;
+    background: linear-gradient(140deg, rgb(167, 167, 167), 30%, rgb(229, 228, 229));
+    transition: 1s ease-in-out infinite;
   }
   body .container #mid .center .card {
     border-radius: unset;
