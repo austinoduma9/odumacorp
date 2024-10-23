@@ -609,14 +609,14 @@ body{
                     font-size: unset;
                     align-self: unset;
                     max-width: unset;
-                    width: 40px;
-                    height: 40px;
-                    padding:  0 0 10px 0px;
+                    width: 30px;
+                    height: 30px;
+                    padding:  0 0 0px 0px;
                     // border: 1px solid rgba(206, 206, 206, 0.329);
                     &:hover{
                         animation: hover-nav ease 0.1s;
                         transition: 1s;
-                        background: linear-gradient(rgb(4, 77, 146), blue);
+                        background: linear-gradient(rgb(163, 163, 164), rgb(249, 249, 250));
                         transform:  translateY(-10px);
                         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.415);
                         padding: 3px;
