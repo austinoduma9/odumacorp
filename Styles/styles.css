@@ -576,7 +576,7 @@ body .icon {
     visibility: hidden;
   }
   body .nav-bar nav {
-    background-color: rgba(239, 239, 236, 0.95);
+    background-color: unset;
     position: fixed;
     display: flex;
     bottom: 0px;
@@ -589,8 +589,11 @@ body .icon {
     height: unset;
     width: 100%;
     border-radius: unset;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     margin-top: unset;
     margin-bottom: unset;
+    background-color: unset;
     color: unset;
     display: flex;
     justify-content: space-around;
@@ -609,14 +612,14 @@ body .icon {
     padding: 0 0 0px 0px;
   }
   body .nav-bar nav ul li:hover {
-    animation: hover-nav ease 0.1s;
-    transition: 1s;
-    background: linear-gradient(rgb(163, 163, 164), rgb(249, 249, 250));
+    animation: hover-nav ease-in-out ease-out;
+    background: linear-gradient(rgba(163, 163, 164, 0.9), rgba(249, 249, 250, 0.9));
     transform: translateY(-10px);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.415);
     padding: 3px;
     border-radius: 50%;
-    filter: opacity(85%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
   }
   body .nav-bar nav ul li:nth-last-of-type(1) {
     content: url("/images/notification.png");
@@ -636,26 +639,7 @@ body .icon {
   body .nav-bar nav ul li:nth-last-of-type(6) {
     content: url("/images/OdumaCorp-icon-small.png");
   }
-  @keyframes hover-nav {
-    0% {
-      transform: translateY(0px);
-    }
-    100% {
-      background: linear-gradient(rgb(4, 77, 146), blue);
-      box-shadow: 2px 2px 3px black;
-      border-radius: 50%;
-    }
-    50% {
-      background: linear-gradient(rgb(4, 77, 146), blue);
-      transform: translateY(-5px);
-      box-shadow: 2px 2px 3px black;
-      padding: 5px;
-    }
-    0% {
-      background: linear-gradient(rgb(4, 77, 146), blue);
-      transform: translateY(0px);
-    }
-  }
+  @keyframes hover-nav {}
   body .search {
     height: -moz-fit-content;
     height: fit-content;
@@ -835,7 +819,7 @@ body .icon {
     overflow: hidden;
     display: -webkit-box;
     max-width: unset;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   body .container #mid .center .that-viewed .tile-container .tile {
     width: -moz-fit-content;
@@ -863,7 +847,7 @@ body .icon {
   body .container #mid .center .left-section .tile-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     overflow: hidden;
   }
   body .container #mid .center .left-section .tile-section img {
