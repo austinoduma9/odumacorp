@@ -607,7 +607,6 @@ body .icon {
     width: 30px;
     height: 30px;
     padding: 0 0 10px 0px;
-    border: 1px solid rgba(206, 206, 206, 0.329);
   }
   body .nav-bar nav ul li:hover {
     animation: hover-nav ease-in-out 0.1s;
