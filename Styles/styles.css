@@ -339,7 +339,7 @@ html .container #mid .center .idea-section .idea-body .idea-media-section img {
   border-radius: 10px;
   border: 1px solid rgb(139, 139, 139);
   content: url("/images/hero_img.jpg");
-  transition: 1s;
+  transition: 0.5s;
 }
 html .container #mid .center .idea-section .idea-body .idea-media-section img:hover {
   box-shadow: 1px 1px 6px 0px rgb(124, 124, 124);
@@ -394,9 +394,8 @@ html .container #mid .card .tile img {
   background-color: rgba(193, 192, 194, 0.3098039216);
   border-radius: 10px;
   margin-right: 3px;
-  transition: transform 2s, background 2s;
   content: url("/images/hero_img.jpg");
-  transition: 1s;
+  transition: 0.5s;
 }
 html .container #mid .card .tile img:hover {
   box-shadow: 1px 1px 6px 0px rgb(124, 124, 124);
@@ -481,15 +480,15 @@ html .container #mid .suggestions-section .left-section {
   display: flex;
   flex-direction: column;
 }
-html .container #mid .suggestions-section .left-section .tile-section {
+html .container #mid .suggestions-section .left-section .tile-container {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
 }
-html .container #mid .suggestions-section .left-section .tile-section .titles-about {
+html .container #mid .suggestions-section .left-section .tile-container .titles-about {
   -webkit-line-clamp: 2;
 }
-html .container #mid .suggestions-section .left-section .tile-section span:nth-of-type(1) {
+html .container #mid .suggestions-section .left-section .tile-container span:nth-of-type(1) {
   font-size: 10px;
   font-weight: bold;
 }
@@ -514,21 +513,21 @@ html .container #mid .suggestions-section .right-section {
   display: flex;
   flex-direction: column;
 }
-html .container #mid .suggestions-section .right-section .tile-section {
+html .container #mid .suggestions-section .right-section .tile-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-html .container #mid .suggestions-section .right-section .tile-section .tile {
+html .container #mid .suggestions-section .right-section .tile-container .tile {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 230px;
 }
-html .container #mid .suggestions-section .right-section .tile-section .tile img {
+html .container #mid .suggestions-section .right-section .tile-container .tile img {
   max-width: 100px;
 }
-html .container #mid .suggestions-section .right-section .tile-section .tile .titles-about {
+html .container #mid .suggestions-section .right-section .tile-container .tile .titles-about {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -684,7 +683,7 @@ html .icon {
     visibility: hidden;
   }
   html body .nav-bar nav {
-    background-color: rgba(238, 195, 21, 0.541);
+    background-color: rgba(218, 216, 208, 0.541);
     padding: 10px 0px 30px 0;
     margin-bottom: 10px;
     position: fixed;
@@ -717,10 +716,9 @@ html .icon {
     font-size: unset;
     align-self: unset;
     max-width: unset;
-    width: 30px;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 0px;
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px;
     transition: all 1s;
   }
   html body .nav-bar nav ul li:hover {
@@ -933,6 +931,9 @@ html .icon {
     box-shadow: inset 2px 2px 10px 0px rgba(92, 92, 92, 0.26);
     outline: 1px solid rgba(121, 121, 121, 0.171);
   }
+  html body .container #mid .center .post-section textarea:hover {
+    box-shadow: 1px 1px 4px rgb(255, 255, 255);
+  }
   html body .container #mid .center .idea-section .top {
     display: flex;
     justify-content: flex-end;
@@ -975,6 +976,9 @@ html .icon {
     height: 120px;
     margin: 6px 0;
   }
+  html body .container #mid .center .action-area .small-card textarea:hover {
+    box-shadow: 1px 1px 4px rgb(255, 255, 255);
+  }
   html body .container #mid .center .tile-section {
     flex-direction: row;
   }
@@ -983,13 +987,14 @@ html .icon {
     display: flex;
     width: 100%;
     padding: 0 2px;
+    justify-content: center;
   }
   html body .container #mid .center .that-viewed .tile-container {
     justify-content: center;
     overflow-x: scroll;
     display: -webkit-box;
     max-width: unset;
-    gap: 10px;
+    gap: 20px;
   }
   html body .container #mid .center .that-viewed .tile-container .tile {
     width: -moz-fit-content;
@@ -1016,20 +1021,17 @@ html .icon {
   html body .container #mid .center .suggestions-section .left-section {
     display: flex;
   }
-  html body .container #mid .center .suggestions-section .left-section .tile-section {
+  html body .container #mid .center .suggestions-section .left-section .tile-container {
     padding: 5px 2px;
     display: -webkit-box;
-    overflow: scroll;
-    width: 100%;
-    justify-content: space-around;
-    overflow: hidden;
+    overflow-x: scroll;
   }
-  html body .container #mid .center .suggestions-section .left-section .tile-section .tile {
+  html body .container #mid .center .suggestions-section .left-section .tile-container .tile {
     width: 120px;
     max-width: unset;
     display: flex;
   }
-  html body .container #mid .center .suggestions-section .left-section .tile-section .tile img {
+  html body .container #mid .center .suggestions-section .left-section .tile-container .tile img {
     min-width: 100px;
     max-height: 100px;
   }
@@ -1038,7 +1040,7 @@ html .icon {
     display: flex;
     width: 100%;
   }
-  html body .container #mid .center .suggestions-section .right-section .tile-section {
+  html body .container #mid .center .suggestions-section .right-section .tile-container {
     padding: 5px 0px;
     flex-direction: row;
     max-width: unset;
@@ -1047,12 +1049,12 @@ html .icon {
     gap: 5px;
     width: 100%;
   }
-  html body .container #mid .center .suggestions-section .right-section .tile-section .tile {
+  html body .container #mid .center .suggestions-section .right-section .tile-container .tile {
     width: 100%;
     max-width: 200px;
     display: flex;
   }
-  html body .container #mid .center .suggestions-section .right-section .tile-section .tile img {
+  html body .container #mid .center .suggestions-section .right-section .tile-container .tile img {
     width: -moz-fit-content;
     width: fit-content;
     min-width: 50px;
