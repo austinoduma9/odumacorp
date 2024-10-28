@@ -280,7 +280,9 @@ html .container #mid .center .post-section fieldset button {
 }
 html .container #mid .center .idea-section .top {
   display: flex;
-  justify-content: flex-end;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
 }
 html .container #mid .center .idea-section .top button {
   background-color: rgba(179, 178, 178, 0.062745098);
@@ -303,8 +305,8 @@ html .container #mid .center .idea-section .idea-info table td #status {
   border-radius: 50%;
   margin-left: 6px;
   margin-top: 5px;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background-color: rgb(0, 255, 64);
 }
 html .container #mid .center .idea-section hr {
@@ -898,7 +900,13 @@ html .icon {
     width: fit-content;
   }
   html body .container #mid .center .idea-section .top {
-    padding: 5px 5px;
+    padding: 5px 15px;
+    width: 100%;
+    justify-content: center;
+  }
+  html body .container #mid .center .idea-section .top button {
+    float: right;
+    margin: 5px;
   }
   html body .container #mid .center .idea-section .idea-body {
     padding: 5px;
