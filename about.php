@@ -1,0 +1,59 @@
+<?php
+require_once 'navbar.php';
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <section class="about-section">
+        <h1>Company Profile</h1>
+        <div>
+            <div class="company-profile section">
+                <img class="image" src="images/janko-ferlic-sfL_QOnmy00-unsplash.jpg" alt="image1">
+                <p> At Oduma Corp, we are dedicated 
+                    to helping individuals and communinities improve their livelihoods
+                    by fostering innovations and inventions. Our solutions are designed to
+                    address everyday challenges, unlocking new opportunities for personal and economic 
+                    growth across Kenya and beyond.
+                </p>
+            </div>
+            <h4>About Us</h4>
+            <div class="company-about section">
+                <p> Founded by Austin Oduma, an entreprenuer and inventor
+                    with a passion for creating positive global. Oduma Corp seeks
+                    to transform ideas into impactful solutions. With deep local 
+                    roots and a global outlook, this company provides the tools and 
+                    a platform for innovators to bring their ideas to life, driving 
+                    societal progress and economic prosperity.
+                </p>
+                <img class="image" src="images/jaredd-craig-HH4WBGNyltc-unsplash.jpg" alt="image1">
+            </div>
+ 
+            <div class="company-description">
+                <!-- <h4>About Us</h4> -->
+                <p>  We envision Oduma Corp as a leading force in Africa's innovation landscape
+                    - championing a culture of creativity, invention, and entrepreneurship.
+                    We are commited to nurturing local talent and supporting
+                    businesses to grow and thrive in a competitive global market.
+            
+                </p>
+                <p>
+                    At Oduma Corp, we are committed to empowering creators and businesses across
+                    Kenya and beyond. Through our innovation services, we provide the tools, support,
+                    and connections needed to shape a brighter, more inventive future.
+                </p>
+                <!-- <img src="" alt="" srcset=""> -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<?php
+require_once 'footer.php';
+?>
