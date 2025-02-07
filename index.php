@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oduma Corp - Innovate & Invest</title>
   <link rel="stylesheet" href="Styles/styles2.css">
+  <link rel="icon" href="./images/OdumaCorp-icon-small.png" type="image/x-icon">
 </head>
 <body >
   <header class="header">
