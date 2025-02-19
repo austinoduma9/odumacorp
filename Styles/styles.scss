@@ -7,43 +7,24 @@ $border: solid #005050;
 }
 html{
     font-family:$font-stack;
-    // font-weight: 400;
     font-style: normal;
     font-size: 0.7em;
-    // display: flex;
     flex-direction: column;
     margin: 0px;
     width: 100%;
-    // justify-content: center;
-    // align-items: center;
-    // background-color: red;
-
     body{
         padding: 0;
-        // background-color: red;
         margin: 0;
         width: 100%;
-        // background-color: #711b1b;
-        // .dashboard-body{
-        //     background-color: #004AAD;
-        // }
-
         .search{
-       
             justify-items: right;
-           
             gap: 20px;
             height: 100%;
             padding: 5px 0;
             width: 100%;
-    
-            // background-color: #0ec9c9;
             .in-search{
                 display: flex  ;
                 flex-direction: row;
-        
-                // background-color: blue;
-                // padding: 30px;
                 justify-content: end;
                 align-items:center;
                 a{  
@@ -73,7 +54,6 @@ html{
                     outline: unset;
                     transition: 0.5s ease;
                     text-overflow: ellipsis;
-        
                     &:hover, &:focus{
                         width: 250px;
                         box-shadow: 0px 0px 1.5px 1px rgba($color: #ffffff80, $alpha: 0.6);
@@ -90,25 +70,16 @@ html{
         height: fit-content;
         justify-content:center;
         display: inline-flex;
-        // margin-top: -10px;
         width: 100%;
-        // flex-direction: column;
-    
-        // cursor: pointer;
-
-        // background-color: #004AAD;
         .logo-section{
             align-items: center;
             display: flex;
             flex-direction: column;
-            // min-width: 70px;
             padding: 15px 10px;
             cursor: pointer;
-            // margin-left: 40px;
             span{
                 font-size: 1.5vw;
                 text-wrap: nowrap;
-                // color: #ffffff;
                 mix-blend-mode:difference;
             }
             img{
@@ -128,8 +99,6 @@ html{
                 display: flex;
                 list-style: none;
                 width:fit-content;
-                // width: 50vw;
-                // flex-grow:unset;
                 justify-content: start;
                 align-items: center;
                 // gap: 5vw;

@@ -47,7 +47,7 @@
           align-content: center;
           justify-self: center;
           align-self: center;
-          background: linear-gradient(rgba(230, 230, 230, 0.78),rgba(255, 255, 255, 0.83));
+          background: linear-gradient(rgba(230, 230, 230, 0.78),rgba(219, 23, 23, 0.83));
           border-radius:10px;
           // padding:50px;
           box-shadow: 5px 5px 10px  2px rgba(0, 0, 0, 0.3);
@@ -58,7 +58,7 @@
             form{
               padding: 30px;
               width: 100%;
-              // background-color: aquamarine;
+              background-color: aquamarine;
               p:first-of-type{
                 font-size: 40px;
                 padding: 10px 0;
@@ -173,17 +173,13 @@
             font-size: 1.8vw;
             display: flex;
             flex-direction: column;
-            // gap: 2;
             background-color: #004bad3a;
             backdrop-filter: blur(20px);
             border-radius: 4vh;
-
-            // align-content: space-evenly;
           }
         }
       }
       .services-section {
-        // margin: 10px 0;
         height: 100%;
         width: 100%;
         padding: 50px 0;
@@ -192,7 +188,6 @@
         justify-content: center;
         flex-direction: column;
         display: flex;
-        // background-color: red;
         h2 {
           font-size: 8vh;
           margin-bottom: 20px;
@@ -202,11 +197,9 @@
           height: fit-content;
           margin: 20px auto;
           list-style: none;
-          // font-size: 180vh;
           padding: 20px 0px;
           flex-direction: column;
           display: flex;
-          // background-color: purple;
           align-items: center;
           gap: 5px;
 
@@ -214,12 +207,9 @@
             text-align: center;
             display: flex;
             flex-direction: row;
-            // margin-bottom: 0px;
             width: 70%;
             gap: 5px;
-            // background-color: #007acc;
             padding: 10px 0px;
-            
             span{
               font-size: 1.4vw;
               font-weight: bold;
@@ -228,12 +218,9 @@
               display: flex;
               justify-content:flex-start;
               align-items:start;
-              // background-color: aqua;
             }
             p{
-              // text-indent:0px;
               font-size: 1.4vw;
-
               display: flex;
               width: fit-content;
               text-align:left;

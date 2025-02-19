@@ -26,18 +26,9 @@
                             <a href="networks.php">My Network</a>
                             <a href="jobs.php">Jobs</a>
                             <a href="messages.php">Messages</a>
-                            <a href=" notifications.php">Notification</a>
-                            <a href=" dashboard.php">Dashboard</a>
+                            <a href="notifications.php">Notification</a>
+                            <a href="dashboard.php">Dashboard</a>
                         </li>
-                        <!-- <li><a href="app.php">App</a></li> -->
-                        <!-- <li><a href="about.php">About</a></li>
-                        <li><a href="services.php">Services</a></li>
-                        <li><a href="events.php">News/Events</a></li>
-                        <li><a href="networks.php">My Network</a></li>
-                        <li><a href="jobs.php">Jobs</a></li>
-                        <li><a href="messages.php">Messages</a></li>
-                        <li><a href=" notifications.php">Notification</a></li>
-                        <li><a href=" dashboard.php">Dashboard</a></li> -->
                     </ul>
                 </nav>
         </div>

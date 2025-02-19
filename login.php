@@ -79,12 +79,12 @@
             <!-- Bio on the left side Updated -->
                 <p>Register</p>
                 <div>
-                <label for="fname">Enter First Name</label><br>
-                <input id="fname" type="text" name="fname" >
-                <br>
-                <label for="lname">Enter Last Name</label><br>
-                <input id="lname" type="text" name="lname" >
-                <br>
+                    <label for="fname">Enter First Name</label><br>
+                    <input id="fname" type="text" name="fname" >
+                    <br>
+                    <label for="lname">Enter Last Name</label><br>
+                    <input id="lname" type="text" name="lname" >
+                    <br>
                 </div>
                 <div>
                     <label for="email">Enter email address</label><br>
@@ -98,13 +98,15 @@
                     <label for="password">Enter password</label><br>
                     <input id="password" type="password" name="password" >
                     <br>
-                
                     <label for="photo">Enter Profile Photo</label><br>
                     <input id="photo" type="file" name="photo" accept="image/*"  multiple>
                     <br><br>
                 </div>
                 <div>
+                    <button>
                     <input type="submit" value="Save">
+
+                    </button>
                     <button onclick="closeDialog()">Close</button>
 
                 </div>
@@ -112,9 +114,9 @@
         <!-- end -->
         </div>
     </dialog>
-    <dialog id="login">
+    <!-- <dialog id="login">
         <div class="card">
-            <!-- To be a modal -->
+            To be a modal -->
             <!-- To appear on the left corner of the profile page -->
             <form action="login.php" method="post" enctype="multipart/form-data">
             <!-- Bio on the left side Updated -->

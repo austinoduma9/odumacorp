@@ -40,18 +40,33 @@
   
   <section class="carousel-section" >
     <div class="carousel">
+      <style>
+       .carousel-item > button:hover{
+
+          background-color:unset;
+          box-shadow:unset;
+          border: unset;
+        }
+      </style>
       <div class="carousel-item">
-        <img src="./images/social-media.gif" alt="Service 1">
+        <button onclick="window.location.href='services.php#invention-support'">
+          <img src="./images/social-media.gif" alt="Service 1">
+        </button>
+
         <h3>Innovation Consulting</h3>
         <p>We guide your innovations to success.</p>
       </div>
       <div class="carousel-item">
-        <img src="./images/support.gif" alt="Service 2">
+        <button onclick="window.location.href='services.php#innovation-consulting'">
+          <img src="./images/support.gif" alt="Service 2">
+        </button>
         <h3>Invention Support</h3>
         <p>We help your ideas become reality.</p>
       </div>
       <div class="carousel-item">
-        <img src="./images/diagram.gif" alt="Service 3">
+        <button onclick="window.location.href='services.php#innovation-training'">
+          <img src="./images/diagram.gif" alt="Service 3">
+        </button>
         <h3>Innovation Training</h3>
         <p>Empowering innovators for the future.</p>
       </div>

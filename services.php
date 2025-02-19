@@ -12,7 +12,7 @@
 <body>
     <section class="section-services">
         <h1>Our Services</h1>
-        <div>
+        <div id="invention-support">
             <img class="image" src="./images/social-media.png" alt="image1">
             <div>
                 <h3>Invention Support</h3>
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div>
+        <div id="innovation-consulting">
             <img src="images/support.png" alt="image2">
             <div>
                 <h3>Innovation Consulting</h3>
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div>
+        <div id="innovation-training">
             <img src="images/diagram.png" alt="image3">
             <div>
                 <h3>Innovation Training</h3>
