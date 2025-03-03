@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Document</title> -->
+  <link rel="stylesheet" href="Styles/styles2.css">
+
+</head>
+<body>
 <?php 
   echo '<link rel="stylesheet" href="Styles/styles2.css">';
   echo '<footer class="footer">';
@@ -7,6 +17,10 @@
 
   echo '</footer>';
 ?>
+  
+</body>
+</html>
+
  <?php
     require_once "login.php";
     ?>

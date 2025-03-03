@@ -7,12 +7,7 @@
     <link rel="stylesheet" href="Styles/styles2.css">
 </head>
 <body>
-<?pphp include_once 'navbar.php';?>
-<?pphp include_once 'connection.php';?>
-
-
     <!-- <h1>Login</h1> -->
-
     <dialog id="login">
         <div class="card">
             <!-- To be a modal -->
@@ -48,11 +43,8 @@
 </body>
 </html>
 
+<div id="bio"></div>
 
-<?php
-    require_once "bio.php";
-    // require_once "footer.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,14 +53,9 @@
     <!-- <script src="/jquery-3.7.1.min.js"></script> -->
     <title>Bio</title>
     <link rel="stylesheet" href="Styles/styles2.css">
-
     
-    <style>
-       
-    </style>
 </head>
 <body>
-    
 
 <div class="user-section">
     <dialog id="register">
@@ -139,7 +126,7 @@
         const app = document.getElementById('');
         function openApp(){
             app.addEventListener('click',(e) =>{
-                window.location.href = "app.php";
+                window.location.href = "app.html";
             });
 
         }

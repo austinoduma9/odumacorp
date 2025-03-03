@@ -7,7 +7,7 @@
                 const home = document.getElementById('logo-section');
 
                 function backHome(){
-                    location.href = "index.php";
+                    location.href = "index.html";
                 }
             </script>
         
@@ -18,16 +18,16 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="index.php">Home</a>
-                            <a href="app.php">App</a>
-                            <a href="about.php">About</a>
-                            <a href="services.php">Services</a>
-                            <a href="events.php">News/Events</a>
-                            <a href="networks.php">My Network</a>
-                            <a href="jobs.php">Jobs</a>
-                            <a href="messages.php">Messages</a>
-                            <a href="notifications.php">Notification</a>
-                            <a href="dashboard.php">Dashboard</a>
+                            <a href="index.html">Home</a>
+                            <a href="app.html">App</a>
+                            <a href="about.html">About</a>
+                            <a href="services.html">Services</a>
+                            <a href="events.html">News/Events</a>
+                            <a href="networks.html">My Network</a>
+                            <a href="jobs.html">Jobs</a>
+                            <a href="messages.html">Messages</a>
+                            <a href="notifications.html">Notification</a>
+                            <a href="dashboard.html">Dashboard</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,6 +39,5 @@
             <button onclick="history.back()">Back</button>
         </div>
     </header>
-
 
     
