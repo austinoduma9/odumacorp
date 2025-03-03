@@ -118,10 +118,10 @@
         <div class="card">
             To be a modal -->
             <!-- To appear on the left corner of the profile page -->
-            <form action="login.php" method="post" enctype="multipart/form-data">
+            <!-- <form action="login.php" method="post" enctype="multipart/form-data"> -->
             <!-- Bio on the left side Updated -->
-                <p>Login</p>
-                <label for="email">Enter your email:</label><br>
+                <!-- <p>Login</p> -->
+                <!-- <label for="email">Enter your email:</label><br>
                 <input id="email" type="text" name="email" >
                 <br>
                 <label for="password">Enter your password</label><br>
@@ -130,8 +130,8 @@
                 <p><a href="http://" target="_blank" rel="noopener noreferrer">Forget Password</a></p>
                 <br><br>
                 <input type="submit" value="Login" id="openApp">
-                <button onclick="closeDialog()">Close</button>
-            </form>
+                <button onclick="closeDialog()">Close</button> -->
+            <!-- </form> -->
         <!-- end -->
         </div>
     </dialog>
