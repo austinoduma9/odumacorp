@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oduma Corp - Innovate & Invest</title>
   <link rel="stylesheet" href="Styles/styles2.css">
+  <link rel="stylesheet" href="Styles/styles.css">
+
   <link rel="icon" href="./images/OdumaCorp-icon-small.png" type="image/x-icon">
 </head>
 <body >
@@ -13,8 +15,40 @@
         <source src="./images/earth2.mp4" type="video/mp4">
       </video>
         <div class="hero-section">
-          <?php include_once 'navbar.php';?>
-
+          <div class="nav-bar">
+            <script> 
+                const home = document.getElementById('logo-section');
+                function backHome(){
+                    location.href = "index.php";
+                }
+            </script>
+            <div class="logo-section" onclick ="backHome()">
+                <img src="./images/odumacorp-icon.png" alt="company-icon">
+                <span>Oduma Corp</span>
+            </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.php">Home</a>
+                            <a href="app.php">App</a>
+                            <a href="about.php">About</a>
+                            <a href="services.php">Services</a>
+                            <a href="events.php">News/Events</a>
+                            <a href="networks.php">My Network</a>
+                            <a href="jobs.php">Jobs</a>
+                            <a href="messages.php">Messages</a>
+                            <a href="notifications.php">Notification</a>
+                            <a href="dashboard.php">Dashboard</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="btns">
+            <button onclick="showRegister()">Register</button>
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showLogout()">Logout</button>
+            <button onclick="history.back()">Back</button>
+        </div>
           <section class="heading">
             <h1>We Make Your Dreams Come True!</h1>
             <h2>Innovate & Invest</h2>
