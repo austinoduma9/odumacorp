@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oduma Corp - Innovate & Invest</title>
   <link rel="stylesheet" href="Styles/styles2.css">
+  <link rel="icon" href="./images/OdumaCorp-icon-small.png" type="image/x-icon">
 </head>
 <body >
   <header class="header">
@@ -12,9 +13,7 @@
         <source src="./images/earth2.mp4" type="video/mp4">
       </video>
         <div class="hero-section">
-          <p <?php include_once 'navbar.php';?>
-            <?php include_once 'navbar.php';?>
-          </p> 
+          <?php include_once 'navbar.php';?>
 
           <section class="heading">
             <h1>We Make Your Dreams Come True!</h1>
@@ -41,18 +40,33 @@
   
   <section class="carousel-section" >
     <div class="carousel">
+      <style>
+       .carousel-item > button:hover{
+
+          background-color:unset;
+          box-shadow:unset;
+          border: unset;
+        }
+      </style>
       <div class="carousel-item">
-        <img src="./images/social-media.gif" alt="Service 1">
+        <button onclick="window.location.href='services.php#invention-support'">
+          <img src="./images/social-media.gif" alt="Service 1">
+        </button>
+
         <h3>Innovation Consulting</h3>
         <p>We guide your innovations to success.</p>
       </div>
       <div class="carousel-item">
-        <img src="./images/support.gif" alt="Service 2">
+        <button onclick="window.location.href='services.php#innovation-consulting'">
+          <img src="./images/support.gif" alt="Service 2">
+        </button>
         <h3>Invention Support</h3>
         <p>We help your ideas become reality.</p>
       </div>
       <div class="carousel-item">
-        <img src="./images/diagram.gif" alt="Service 3">
+        <button onclick="window.location.href='services.php#innovation-training'">
+          <img src="./images/diagram.gif" alt="Service 3">
+        </button>
         <h3>Innovation Training</h3>
         <p>Empowering innovators for the future.</p>
       </div>
@@ -89,5 +103,5 @@
 </body>
 
 </html>
-<?php require_once 'footer.php'?>
+<?php require_once 'footer.php' ?>
 
