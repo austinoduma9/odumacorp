@@ -12,6 +12,7 @@
             </script>
         
             <div class="logo-section" onclick ="backHome()">
+                <?php echo '<img src="./images/odumacorp-icon.png" alt="company-icon">'?>
                 <img src="./images/odumacorp-icon.png" alt="company-icon">
                 <span>Oduma Corp</span>
             </div>
