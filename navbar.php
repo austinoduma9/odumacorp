@@ -16,7 +16,7 @@
                 <div>hello</div>
                 <img src="images/odumacorp-icon.png" alt="company-icon">
                 <img src="../odumacorp-icon.png" alt="company-icon">
-
+                <img src="./images/odumacorp-icon.png" alt="company-icon">
                 <span>Oduma Corp</span>
             </div>
                 <nav>
