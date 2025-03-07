@@ -139,6 +139,9 @@ html .btns {
   gap: 20px;
   display: flex;
 }
+html .btns .menu-btn {
+  display: none;
+}
 html button {
   background-color: #004AAD;
   color: white;

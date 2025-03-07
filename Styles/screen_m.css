@@ -304,6 +304,7 @@
     cursor: pointer;
   }
   html body .header-section .btns .menu-btn {
+    display: block;
     position: relative;
     width: 40px;
     height: 40px;
