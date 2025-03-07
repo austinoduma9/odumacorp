@@ -13,7 +13,7 @@ html {
 html body {
   padding: 0;
   margin: 0;
-  width: 100%;
+  overflow-x: hidden;
 }
 html body .search {
   justify-items: right;
@@ -61,10 +61,17 @@ html body .search .in-search input:hover, html body .search .in-search input:foc
   width: 250px;
   box-shadow: 0px 0px 1.5px 1px rgba(255, 255, 255, 0.6);
 }
-html header {
-  padding: 0;
+html body .footer {
+  display: flex;
+  width: 100vw;
+  background-color: rgba(120, 120, 120, 0.099);
+  bottom: 0;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
 }
-html .nav-bar {
+html body .nav-bar {
   padding: 0px;
   height: -moz-fit-content;
   height: fit-content;
@@ -72,32 +79,32 @@ html .nav-bar {
   display: inline-flex;
   width: 100%;
 }
-html .nav-bar .logo-section {
+html body .nav-bar .logo-section {
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 15px 10px;
   cursor: pointer;
 }
-html .nav-bar .logo-section span {
+html body .nav-bar .logo-section span {
   font-size: 1.5vw;
   text-wrap: nowrap;
   mix-blend-mode: difference;
 }
-html .nav-bar .logo-section img {
+html body .nav-bar .logo-section img {
   width: 4vw;
   z-index: 1;
 }
-html .nav-bar nav {
+html body .nav-bar nav {
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.144));
   transition: 2s;
 }
-html .nav-bar nav ul {
-  height: 15vh;
+html body .nav-bar nav ul {
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 0px 0px 4px 4px;
-  margin-top: -10px;
-  background-color: rgb(232, 232, 232);
-  padding: 0px 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 5vh 20px;
   display: flex;
   list-style: none;
   width: -moz-fit-content;
@@ -105,13 +112,13 @@ html .nav-bar nav ul {
   justify-content: start;
   align-items: center;
 }
-html .nav-bar nav ul li {
+html body .nav-bar nav ul li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 1vw;
 }
-html .nav-bar nav ul li a {
+html body .nav-bar nav ul li a {
   text-wrap: nowrap;
   font-size: 1.2vw;
   color: #000000;
@@ -120,10 +127,14 @@ html .nav-bar nav ul li a {
   flex-direction: row;
   transition: width 2s, height 2s, background-color 2s, font-size 1s, rotate 2s;
 }
-html .nav-bar nav ul li a:hover {
+html body .nav-bar nav ul li a:hover {
   font-size: 1.5vw;
 }
+html header {
+  padding: 0;
+}
 html .btns {
+  margin-top: 20px;
   justify-content: center;
   gap: 20px;
   display: flex;
@@ -154,7 +165,8 @@ html .actions {
   padding: 5px 0px;
 }
 html .actions button {
-  font-size: 2.5vh;
+  font-size: 1.5vh;
+  display: flex;
 }
 html .container {
   display: flex;
@@ -657,390 +669,4 @@ html .container #mid .right .proposal-section .tile .action-section button {
 html .icon {
   width: 40px;
   font-size: 7px;
-}
-
-@media only screen and (max-width: 600px) {
-  html {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    display: flex;
-    box-sizing: border-box;
-  }
-  html body {
-    padding: 20px 0;
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 0;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  html body .nav-bar {
-    width: 100%;
-    display: flex;
-    padding: 0px;
-    height: -moz-fit-content;
-    height: fit-content;
-    justify-content: center;
-    z-index: 1;
-  }
-  html body .nav-bar .logo-section {
-    align-items: unset;
-    display: unset;
-    flex-direction: unset;
-    padding: 0px 5px;
-    justify-self: unset;
-    position: absolute;
-    margin-bottom: 0px;
-    margin-top: 30px;
-  }
-  html body .nav-bar .logo-section img {
-    width: 6rem;
-    padding: 0px;
-    margin-top: 0px;
-    transition: 0.3s;
-  }
-  html body .nav-bar .logo-section img:hover {
-    transform: translateY(-3px);
-    filter: drop-shadow(1px 1px 1px rgba(58, 58, 58, 0.445));
-  }
-  html body .nav-bar span {
-    visibility: hidden;
-  }
-  html body .search {
-    display: flex;
-    padding: 0px 0;
-    margin-bottom: 10px;
-    justify-content: center;
-    gap: 0px;
-    justify-self: center;
-    width: unset;
-  }
-  html body .search .in-search {
-    background-color: rgb(254, 254, 254);
-    display: flex;
-    width: 28rem;
-    height: -moz-fit-content;
-    height: fit-content;
-    align-content: center;
-    border-radius: 20rem;
-    padding: 0px 5px;
-    transition: 1s;
-  }
-  html body .search .in-search:hover {
-    box-shadow: 1px 1px 4px 0.5px rgba(88, 88, 88, 0.2);
-    transform: translateY(-1.5px);
-  }
-  html body .search .in-search input {
-    font-size: 16px;
-    border-radius: 20rem;
-    display: flex;
-    outline: unset;
-    justify-self: center;
-    background: rgba(255, 255, 255, 0);
-    padding: 15px;
-    border: unset;
-  }
-  html body .search .in-search button {
-    position: relative;
-    right: 10px;
-    left: unset;
-    width: -moz-fit-content;
-    width: fit-content;
-    top: unset;
-    visibility: visible;
-    height: -moz-fit-content;
-    height: fit-content;
-    background-color: unset;
-    font-size: 0px;
-    transform: scale(0.6);
-    border-radius: unset;
-    box-shadow: unset;
-    transition: 1s;
-  }
-  html body .search .in-search button::after {
-    visibility: visible;
-    content: url("./images/icons8-search-50.png");
-  }
-  html body .search .in-search button:hover {
-    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.562));
-    transform: scale(0.6);
-  }
-  html body .actions {
-    width: 100%;
-    gap: unset;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    justify-self: unset;
-    align-self: unset;
-    padding: 0px;
-  }
-  html body .container {
-    width: 100%;
-    margin-bottom: 35px;
-    display: flex;
-  }
-  html body .container #mid {
-    display: flex;
-    flex-direction: column;
-    padding: unset;
-    margin: unset;
-    justify-content: unset;
-    min-width: unset;
-    max-width: unset;
-    width: 100%;
-  }
-  html body .container #mid .section {
-    border-radius: unset;
-    border: unset;
-    padding: 15px 5px;
-  }
-  html body .container #mid .left {
-    width: 100%;
-    max-width: unset;
-    min-width: unset;
-    position: relative;
-  }
-  html body .container #mid .left .user-section {
-    align-content: center;
-    padding: unset;
-    height: -moz-fit-content;
-    height: fit-content;
-    gap: 10px;
-    position: relative;
-    flex-direction: row;
-  }
-  html body .container #mid .left .user-section div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  html body .container #mid .left .user-about {
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    line-height: 15px;
-    max-height: -moz-fit-content;
-    max-height: fit-content; /* For 2 lines */
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    width: 100%;
-  }
-  html body .container #mid .left .user-about span {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  html body .container #mid .left .user-info {
-    justify-content: center;
-    margin: unset;
-  }
-  html body .container #mid .left .user-info ul {
-    padding: unset;
-    list-style: none;
-    flex-direction: row;
-    gap: 5px;
-  }
-  html body .container #mid .left .user-info ul li {
-    font-size: 12px;
-  }
-  html body .container #mid .left .more-user-info ul {
-    flex-direction: row;
-    gap: 15px;
-  }
-  html body .container #mid .center {
-    width: 100%;
-    padding: 0px;
-    gap: unset;
-    max-width: unset;
-    flex-direction: column;
-  }
-  html body .container #mid .center .idea-section {
-    display: flex;
-    flex-direction: column;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  html body .container #mid .center .idea-section .top {
-    padding: 5px 15px;
-    width: 100%;
-    justify-content: center;
-  }
-  html body .container #mid .center .idea-section .top button {
-    float: right;
-    margin: 5px;
-  }
-  html body .container #mid .center .idea-section .idea-body {
-    padding: 5px;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  html body .container #mid .center .idea-section .idea-media-section {
-    padding: unset;
-    width: unset;
-  }
-  html body .container #mid .center .idea-section .idea-media-section img {
-    display: flex;
-    max-width: 100px;
-    content: url("./images/OdumaCorp-icon-small.png");
-    width: unset;
-  }
-  html body .container #mid .center .card {
-    border-radius: unset;
-    border: unset;
-    padding: unset;
-  }
-  html body .container #mid .center .post-section {
-    padding: 5px;
-    width: 100%;
-  }
-  html body .container #mid .center .post-section textarea {
-    width: 100%;
-    padding: 10px 10px;
-    border: unset;
-    box-shadow: inset 2px 2px 10px 0px rgba(92, 92, 92, 0.26);
-    outline: 1px solid rgba(121, 121, 121, 0.171);
-  }
-  html body .container #mid .center .post-section textarea:hover {
-    box-shadow: 1px 1px 4px rgb(255, 255, 255);
-  }
-  html body .container #mid .center .idea-section .top {
-    display: flex;
-    justify-content: flex-end;
-  }
-  html body .container #mid .center .idea-section .idea-body .interest-section {
-    margin: 10px 0;
-    color: rgba(48, 48, 48, 0.7882352941);
-  }
-  html body .container #mid .center .idea-section .idea-body .idea-media-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  html body .container #mid .center .idea-section .idea-body .idea-media-section img {
-    width: -moz-fit-content;
-    width: fit-content;
-    max-width: 200px;
-  }
-  html body .container #mid .center .action-area {
-    justify-content: space-evenly;
-    padding: 0px 0px;
-    gap: unset;
-    border: 1px solid rgba(0, 0, 0, 0.096);
-  }
-  html body .container #mid .center .action-area .small-card {
-    border-radius: unset;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  html body .container #mid .center .action-area .small-card textarea {
-    padding: 10px;
-    border: unset;
-    border-radius: 5px;
-    background-color: rgba(209, 209, 209, 0.1568627451);
-    outline: unset;
-    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.295);
-    resize: none;
-    height: 120px;
-    margin: 6px 0;
-  }
-  html body .container #mid .center .action-area .small-card textarea:hover {
-    box-shadow: 1px 1px 4px rgb(255, 255, 255);
-  }
-  html body .container #mid .center .tile-section {
-    flex-direction: row;
-  }
-  html body .container #mid .center .that-viewed {
-    text-align: center;
-    display: flex;
-    width: 100%;
-    padding: 0 2px;
-    justify-content: center;
-  }
-  html body .container #mid .center .that-viewed .tile-container {
-    justify-content: center;
-    overflow-x: scroll;
-    display: -webkit-box;
-    max-width: unset;
-    gap: 20px;
-  }
-  html body .container #mid .center .that-viewed .tile-container .tile {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: unset;
-    display: flex;
-    max-width: 200px;
-    text-align: left;
-  }
-  html body .container #mid .center .that-viewed .tile-container .tile img {
-    top: 0;
-    width: 150px;
-  }
-  html body .container #mid .center .that-viewed .titles-about {
-    margin: 4px 0;
-  }
-  html body .container #mid .center .suggestions-section .top-section {
-    flex-direction: column;
-  }
-  html body .container #mid .center .suggestions-section .bottom-section {
-    flex-direction: column;
-    width: 100%;
-  }
-  html body .container #mid .center .suggestions-section .left-section {
-    display: flex;
-  }
-  html body .container #mid .center .suggestions-section .left-section .tile-container {
-    padding: 5px 2px;
-    display: -webkit-box;
-    overflow-x: scroll;
-  }
-  html body .container #mid .center .suggestions-section .left-section .tile-container .tile {
-    width: 120px;
-    max-width: unset;
-    display: flex;
-  }
-  html body .container #mid .center .suggestions-section .left-section .tile-container .tile img {
-    min-width: 100px;
-    max-height: 100px;
-  }
-  html body .container #mid .center .suggestions-section .right-section {
-    padding: 2px 2px;
-    display: flex;
-    width: 100%;
-  }
-  html body .container #mid .center .suggestions-section .right-section .tile-container {
-    padding: 5px 0px;
-    flex-direction: row;
-    max-width: unset;
-    display: -webkit-box;
-    overflow-x: scroll;
-    gap: 5px;
-    width: 100%;
-  }
-  html body .container #mid .center .suggestions-section .right-section .tile-container .tile {
-    width: 100%;
-    max-width: 200px;
-    display: flex;
-  }
-  html body .container #mid .center .suggestions-section .right-section .tile-container .tile img {
-    width: -moz-fit-content;
-    width: fit-content;
-    min-width: 50px;
-  }
-  html body .container #mid .right {
-    width: 100%;
-    max-width: unset;
-    min-width: unset;
-    background-color: rgba(153, 153, 153, 0.247);
-  }
-  html body .container #mid .right .proposal-section {
-    flex-direction: row;
-  }
-  html body .container #mid .right .titles-about {
-    margin: 0;
-    text-align: center;
-  }
 }/*# sourceMappingURL=styles.css.map */

@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
-    <link rel="stylesheet" href="Styles/styles2.css">
+    <!-- <link rel="stylesheet" href="Styles/styles2.css"> -->
 </head>
 <body>
-<?pphp include_once 'navbar.php';?>
-<?pphp include_once 'connection.php';?>
+
 
 
     <!-- <h1>Login</h1> -->
@@ -53,21 +52,17 @@
     require_once "bio.php";
     // require_once "footer.php";
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="/jquery-3.7.1.min.js"></script> -->
+    <script src="/jquery-3.7.1.min.js"></script>
     <title>Bio</title>
     <link rel="stylesheet" href="Styles/styles2.css">
 
-    
-    <style>
-       
-    </style>
 </head>
-<body>
+<body> -->
     
 
 <div class="user-section">
@@ -139,7 +134,7 @@
         const app = document.getElementById('');
         function openApp(){
             app.addEventListener('click',(e) =>{
-                window.location.href = "app.php";
+                window.location.href = "app.html";
             });
 
         }
@@ -179,4 +174,3 @@
 
 </body>
 </html>
-<!-- <?php require_once 'footer.php' ?> -->

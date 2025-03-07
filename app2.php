@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oduma Corp App</title>
-    <link rel="icon" href="./images/OdumaCorp-icon.png">
-
-
+    <link rel="icon" href="/images/OdumaCorp-icon.png">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <!-- jaldi font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
@@ -14,14 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
-
-
-    <script src="pages_scripts.js"></script>
-
 </head>
 <body>
-
-    <div id='navbar'></div> 
+    <?php include_once 'navbar.php'?>
     <!-- search bar -->
      <div class="search">
         <div class="in-search">
@@ -30,8 +25,7 @@
             <!-- <button  type="button">Search </button> -->
             <a href=""><img src="./images/icons8-search-48.png" alt="" srcset=""></a>
         </div>
-     </div>    
-
+     </div>
     <!-- buttons -->
     <div class="actions">
         <button type="button" class="btn">My Post</button>
@@ -55,13 +49,13 @@
                 <div class="user-about"><span>About:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae esse soluta fugit magni iure, nobis quod culpa eos iste tempore similique neque expedita vel atque officiis asperiores? </div>
                 <div class="user-info">
                     <ul>
-                        <li>Profile views <span>#</span></li>
-                        <li>Connecitons <span>#</span><li>
-                        <li>Inventions <span>#</span></li>
-                        <li>Patents <span>#</span></li>
-                        <li>Groups<span>#</span></li>
-                        <li>Pages <span>#</span></li>
-                        <li>Events <span>#</span></li>
+                        <li>Profile views #</li>
+                        <li>Connecitons #</li>
+                        <li>Inventions #</li>
+                        <li>Patents #</li>
+                        <li>Groups</li>
+                        <li>Pages #</li>
+                        <li>Events #</li>
                     </ul>
                 </div>
                 <div class="more-user-info">
@@ -121,7 +115,7 @@
                             <span>Likes #</span>
                         </div>
                         <div class="idea-media-section">
-                            <img src="images/ai.jpg" alt="" srcset="">
+                            <img src="" alt="" srcset="">
                             <img src="" alt="" srcset="">
                         </div>
                     </div>
@@ -146,7 +140,7 @@
                         <span class="head">Who viewed your Profile</span>
                         <div class="tile-container">
                             <div class="tile">
-                                <img src="./images/imager4.jpg" alt="profile-icon" srcset="" class="icon">
+                                <img src="" alt="profile-icon" srcset="" class="icon">
                                 <div>
                                     <span>First Last Name</span>
                                     <div class="titles-about">
@@ -156,7 +150,7 @@
                                 </div>
                             </div>
                             <div class="tile">
-                                <img src="./images/imager4.jpg" alt="profile-icon" srcset="" class="icon">
+                                <img src="" alt="profile-icon" srcset="" class="icon">
                                 <div>
                                     <span>First Last Name</span>
                                     <div class="titles-about">
@@ -166,7 +160,7 @@
                                 </div>
                             </div>
                             <div class="tile">
-                                <img src="./images/imager4.jpg" alt="profile-icon" srcset="" class="icon">
+                                <img src="" alt="profile-icon" srcset="" class="icon">
                                 <div>
                                     <span>First Last Name</span>
                                     <div class="titles-about">Lorem ipsum, dolor sit amet con</div>
@@ -183,7 +177,7 @@
                             <span class="head">Node Suggestions</span>
                             <div class="tile-container">
                                 <div class="tile">
-                                    <img src="./images/imager3.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -192,7 +186,7 @@
                                     </div>
                                 </div>
                                 <div class="tile">
-                                    <img src="./images/imager3.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -201,7 +195,7 @@
                                     </div>
                                 </div>
                                 <div class="tile">
-                                    <img src="./images/imager3.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -210,7 +204,7 @@
                                     </div>
                                 </div>
                                 <div class="tile">
-                                    <img src="./images/imager3.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -226,7 +220,7 @@
                             <span class="head">Companies to look at</span>
                             <div class="tile-container">
                                 <div class="tile">
-                                    <img src="./images/imager4.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -234,7 +228,7 @@
                                     </div>
                                 </div>
                                 <div class="tile">
-                                    <img src="./images/imager4.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -242,7 +236,7 @@
                                     </div>
                                 </div>
                                 <div class="tile">
-                                    <img src="./images/imager4.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -257,7 +251,7 @@
                             <span class="head">Nodes in your community</span>
                                 <div class="tile-container">
                                     <div class="tile">
-                                        <img src="./images/imager.jpg" alt="profile-icon" srcset="" class="icon">
+                                        <img src="" alt="profile-icon" srcset="" class="icon">
                                         <div>
                                             <span>First Last Name</span>
                                             <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -265,7 +259,7 @@
                                         </div>
                                     </div>
                                     <div class="tile">
-                                        <img src="./images/imager.jpg" alt="profile-icon" srcset="" class="icon">
+                                        <img src="" alt="profile-icon" srcset="" class="icon">
                                         <div>
                                             <span>First Last Name</span>
                                             <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -273,7 +267,7 @@
                                         </div>
                                     </div>
                                     <div class="tile">
-                                        <img src="./images/imager.jpg" alt="profile-icon" srcset="" class="icon">
+                                        <img src="" alt="profile-icon" srcset="" class="icon">
                                         <div>
                                             <span>First Last Name</span>
                                             <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -281,7 +275,7 @@
                                         </div>
                                     </div>
                                     <div class="tile">
-                                        <img src="./images/imager.jpg" alt="profile-icon" srcset="" class="icon">
+                                        <img src="" alt="profile-icon" srcset="" class="icon">
                                         <div>
                                             <span>First Last Name</span>
                                             <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -294,7 +288,7 @@
                             <span class="head">Based on your profile</span>
                             <div class="tile-container">
                                 <div class="tile">
-                                    <img src="./images/imager2.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -304,7 +298,7 @@
                                 </div>
                           
                                 <div class="tile">
-                                    <img src="./images/imager2.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -313,7 +307,7 @@
                                     </div>
                                 </div>
                                 <div class="tile">
-                                    <img src="./images/imager2.jpg" alt="profile-icon" srcset="" class="icon">
+                                    <img src="" alt="profile-icon" srcset="" class="icon">
                                     <div>
                                         <span>First Last Name</span>
                                         <div class="titles-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!</div>
@@ -335,7 +329,7 @@
                 <div class="proposal-section">
                     <div class="tile">
                         <div class="info">
-                            <img src="./images/iamger5.jpg" alt="profile-icon" srcset="">
+                            <img src="" alt="profile-icon" srcset="">
                             <span>Investor 1</span>
                         </div>
                         <div class="titles-about"><span>About:</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, culpa.</div>
@@ -358,7 +352,7 @@
                     </div>
                     <div class="tile">
                         <div class="info">
-                            <img src="./images/iamger5.jpg" alt="profile-icon" srcset="">
+                            <img src="" alt="profile-icon" srcset="">
                             <span>Investor 1</span>
                         </div>
                         <div class="titles-about"><span>About:</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, culpa.</div>
@@ -385,9 +379,9 @@
         </section>
 </section>
 
-<div id="footer"></div>
+
 
 </body>
 
-
 </html>
+<?php require_once 'footer.php' ?>

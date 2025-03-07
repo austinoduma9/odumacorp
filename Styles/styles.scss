@@ -2,6 +2,8 @@ $font-stack: 'Jacques Francois', sans-serif;
 $button-background: #004AAD;
 $icon-size: 40px;
 $border: solid #005050;
+$section-background:#F9F9F9;
+
 *{
     box-sizing: border-box;
 }
@@ -15,7 +17,8 @@ html{
     body{
         padding: 0;
         margin: 0;
-        width: 100%;
+        overflow-x: hidden;
+        // background-color: #4d3d3d;
         .search{
             justify-items: right;
             gap: 20px;
@@ -61,81 +64,89 @@ html{
                 }
             }
         }
+            .footer{
+                display:flex;
+                width: 100vw;
+                background-color: rgba(120, 120, 120, 0.099);
+                bottom: 0;
+                margin-top: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                justify-content: space-evenly;
+            }
+            .nav-bar{
+                padding: 0px;
+                height: fit-content;
+                justify-content:center;
+                display: inline-flex;
+                width: 100%;
+                .logo-section{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15px 10px;
+                    cursor: pointer;
+                    span{
+                        font-size: 1.5vw;
+                        text-wrap: nowrap;
+                        mix-blend-mode:difference;
+                    }
+                    img{
+                        width: 4vw;
+                        z-index: 1;
+                    }
+                }
+                nav{
+                    filter: drop-shadow(1px 1px  10px rgba(0, 0, 0, 0.144));
+                    ul{
+                        height: fit-content;
+                        border-radius: 0px 0px 4px 4px;
+                        // margin-top: -10px;
+                        // background-color: rgb(95, 26, 26);
+                        background-color: rgb(255, 255, 255);
+                        padding: 5vh 20px;
+                        display: flex;
+                        list-style: none;
+                        width:fit-content;
+                        justify-content: start;
+                        align-items: center;
+                        // gap: 5vw;
+                        li{
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            gap: 1vw;
+                            a {
+                                text-wrap: nowrap;
+                                font-size: 1.2vw;
+                                color: #000000;
+                                cursor: pointer;
+                                text-decoration: none;
+                                // justify-content: space-evenly;
+                                // margin: 0 1vw;
+                                flex-direction: row;
+                                transition:
+                                width 2s,
+                                height 2s,
+                                background-color 2s,
+                                font-size 1s,
+                                rotate 2s;
+                                &:hover{
+                                    font-size: 1.5vw;
+                                }
+                            }
+                        }
+                    }
+                    transition: 2s;
+                }
+            }
     }
     header{
         padding: 0;
     }
-    .nav-bar{
-        padding: 0px;
-        height: fit-content;
-        justify-content:center;
-        display: inline-flex;
-        width: 100%;
-        .logo-section{
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            padding: 15px 10px;
-            cursor: pointer;
-            span{
-                font-size: 1.5vw;
-                text-wrap: nowrap;
-                mix-blend-mode:difference;
-            }
-            img{
-                width: 4vw;
-                z-index: 1;
-                // content: url('images/OdumaCorp-icon-small.png');
-            }
-        }
-        nav{
-            filter: drop-shadow(1px 1px  10px rgba(0, 0, 0, 0.144));
-            // transform: translateY(100px);
-            ul{
-                height: 15vh;
-                border-radius: 0px 0px 4px 4px;
-                margin-top: -10px;
-                background-color: rgb(232, 232, 232);
-                padding: 0px 20px;
-                display: flex;
-                list-style: none;
-                width:fit-content;
-                justify-content: start;
-                align-items: center;
-                // gap: 5vw;
-                li{
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    gap: 1vw;
-                    // background-color: #424242;
-
-                    a {
-                        text-wrap: nowrap;
-                        font-size: 1.2vw;
-                        color: #000000;
-                        cursor: pointer;
-                        text-decoration: none;
-                        // justify-content: space-evenly;
-                        // margin: 0 1vw;
-                        flex-direction: row;
-                        transition:
-                        width 2s,
-                        height 2s,
-                        background-color 2s,
-                        font-size 1s,
-                        rotate 2s;
-                        &:hover{
-                            font-size: 1.5vw;
-                        }
-                    }
-                }
-            }
-            transition: 2s;
-        }
-    }
     .btns{
         // align-content: center;
+        margin-top: 20px;
         justify-content: center;
         gap: 20px;
         display: flex;
@@ -159,14 +170,14 @@ html{
             transform: translateY(-1.5px);
         }
     }   
-   
     .actions{
         gap: 5px;
         display: flex;
         justify-content: center;
         padding: 5px 0px;
         button{
-            font-size: 2.5vh;
+            font-size: 1.5vh;
+            display: flex;
         }
     }
     .container{
@@ -685,390 +696,5 @@ html{
     .icon{
       width: $icon-size;
       font-size: 7px;        
-    }
-}
-@media only screen and (max-width:600px) { 
-   html{
-        width:100%;
-        padding:0;
-        margin: 0;
-        justify-content: center;
-        display: flex;
-        box-sizing: border-box;
-        body{
-            padding: 20px 0;
-            width: 100%;
-            margin-left: 0px;
-            margin-top: 0;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            .nav-bar{
-                width: 100%;
-                display: flex;
-                padding: 0px;
-                height: fit-content;
-                justify-content:center;
-                // display:unset;
-                z-index: 1;
-                .logo-section{
-                    align-items: unset;
-                    display: unset;
-                    flex-direction: unset;
-                    padding: 0px 5px;
-                    justify-self: unset;
-                    position: absolute;
-                    margin-bottom: 0px;
-                    margin-top: 30px;
-                    img{
-                        width: 6rem;
-                        padding: 0px;
-                        margin-top: 0px;
-                        transition:0.3s;
-                        &:hover{
-                            transform: translateY(-3px);
-                            filter: drop-shadow( 1px 1px 1px rgba(58, 58, 58, 0.445));
-                        }
-                    }
-                }
-                span{
-                    visibility: hidden;
-                }
-                
-               
-            }
-            .search{
-                display: flex;
-                padding: 0px 0;
-                margin-bottom: 10px;
-                justify-content: center;
-                gap: 0px;
-                justify-self: center;
-                width: unset;
-                .in-search{
-                    background-color: rgb(254, 254, 254);
-                    display: flex;
-                    width: 28rem;
-                    height: fit-content;
-                    align-content: center;
-                    border-radius: 20rem;
-                    padding: 0px 5px;
-                    transition: 1s;
-                    &:hover{
-                        box-shadow: 1px 1px 4px 0.5px rgba($color: #5858581c, $alpha: 0.2);
-                        transform: translateY(-1.5px);
-                    }
-                    input{
-                        font-size: 16px;
-                        border-radius: 20rem;
-                        display: flex;
-                        outline: unset;
-                        justify-self: center;
-                        background: rgba(255, 255, 255, 0);
-                        padding: 15px;
-                        border: unset;
-                    }
-                    button{
-                        position: relative;
-                        right:10px;
-                        left: unset;
-                        width:fit-content;
-                        top: unset;
-                        visibility: visible;
-                        height: fit-content;
-                        background-color: unset;
-                        font-size: 0px;
-                        transform: scale(0.6);
-                        border-radius: unset;
-                        box-shadow: unset;
-                        transition: 1s;
-                        &::after{
-                            visibility: visible;
-                            content:url("./images/icons8-search-50.png");
-                        }
-                        &:hover{
-                            filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.562));
-                            transform: scale(0.6);
-                        }
-                    }
-                }
-            }
-            .actions{
-                width: 100%;
-                gap: unset;
-                display: flex;
-                gap: 5px;
-                justify-content: center;
-                justify-self: unset;
-                align-self:unset;
-                padding: 0px;
-            }
-            .container{
-                width: 100%;
-                margin-bottom: 35px;
-                display: flex;
-                #mid{
-                    display: flex;
-                    flex-direction: column;
-                    padding: unset;
-                    margin: unset;
-                    justify-content: unset;
-                    min-width: unset;
-                    max-width: unset;
-                    width: 100%;
-                    .section{
-                        border-radius: unset;
-                        border: unset;
-                        padding: 15px 5px;
-                    }
-                    .left{
-                        width: 100%;
-                        max-width: unset;
-                        min-width: unset;
-                        position: relative;
-                        .user-section{
-                            align-content: center;
-                            padding: unset;
-                            height: fit-content;
-                            gap: 10px;
-                            position: relative;
-                            flex-direction: row;
-                            div{
-                                display: flex;
-                                flex-direction: column;
-                                gap: 5px;
-                            }
-                        }
-                        .user-about{
-                            text-overflow: ellipsis;
-                            display: -webkit-box;
-                            line-height: 15px;
-                            max-height: fit-content; /* For 2 lines */
-                            -webkit-line-clamp: 3;
-                            -webkit-box-orient: vertical;
-                            width: 100%;
-                            span{
-                                text-transform: uppercase;
-                                font-weight: bold;
-                            }
-                        }
-                        .user-info{
-                            justify-content: center;
-                            margin: unset;
-                            ul{
-                                padding: unset;
-                                list-style: none;
-                                flex-direction: row;
-                                gap: 5px;
-                                li{
-                                    font-size: 12px;
-                                }
-                            }
-                        }
-                        .more-user-info{
-                            ul{
-                                flex-direction: row;
-                                gap: 15px;
-                            }
-                        }
-                    }
-                    .center{
-                        width:100%;
-                        padding: 0px;
-                        gap: unset;
-                        max-width: unset;
-                        flex-direction: column;
-                        .idea-section{
-                            display: flex;
-                            flex-direction: column;
-                            width: fit-content;
-                            .top{
-                                padding: 5px 15px;
-                                width: 100%;
-                                justify-content: center;
-                                button{
-                                    float: right;
-                                    margin: 5px;
-                                }
-                            }
-                            .idea-body{
-                                padding: 5px;
-                                width: fit-content;
-                            }
-                            .idea-media-section {
-                                padding: unset;
-                                width: unset;
-                                img{
-                                    display:flex;
-                                    max-width: 100px;
-                                    content: url("./images/OdumaCorp-icon-small.png");
-                                    width: unset;
-                                }
-                            }
-                        }
-                        .card{
-                            border-radius: unset;
-                            border: unset;
-                            padding: unset;
-                        }
-                        .post-section{
-                            padding: 5px;
-                            width: 100%;
-                            textarea{
-                                width: 100%;
-                                padding: 10px 10px;
-                                border: unset;
-                                box-shadow: inset 2px 2px 10px 0px rgba(92, 92, 92, 0.26);
-                                outline: 1px solid rgba(121, 121, 121, 0.171);
-                                &:hover{
-                                    box-shadow: 1px 1px 4px rgb(255, 255, 255);
-                                }
-                            }
-                        }
-                        .idea-section{
-                            .top{
-                                display: flex;
-                                justify-content: flex-end;
-                            }
-                            .idea-body{
-                                .interest-section{
-                                    margin:10px 0;
-                                    color:#303030c9;
-                                }
-                                .idea-media-section{
-                                    display: flex;
-                                    flex-direction: row;
-                                    justify-content:space-evenly;
-                                    width: 100%;
-                                    img{
-                                        width: fit-content;
-                                        max-width: 200px;
-                                    }
-                                }
-                            }
-                        }
-                        .action-area{
-                            justify-content: space-evenly;
-                            padding: 0px 0px;
-                            gap: unset;
-                            border: 1px solid rgba(0, 0, 0, 0.096);
-                            .small-card{
-                                border-radius: unset;
-                                padding: 10px;
-                                display: flex;
-                                flex-direction: column;
-                                textarea{
-                                    padding: 10px;
-                                    border: unset;
-                                    border-radius: 5px;
-                                    background-color: #d1d1d128;
-                                    outline:unset;
-                                    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.295);
-                                    resize: none;
-                                    height: 120px;
-                                    margin: 6px 0;
-                                    &:hover{
-                                        box-shadow: 1px 1px 4px rgb(255, 255, 255);
-                                    }
-                                }
-                            }
-                        }
-                        .tile-section{
-                            flex-direction: row;
-                        }
-                        .that-viewed{
-                            text-align: center;
-                            display: flex;
-                            width: 100%;
-                            padding: 0 2px;
-                            justify-content:center;
-                            .tile-container{
-                                justify-content:center;
-                                overflow-x: scroll;
-                                display: -webkit-box;
-                                max-width: unset;
-                                gap: 20px;
-                                .tile{
-                                    width:fit-content;
-                                    height: unset;
-                                    display: flex;
-                                    max-width: 200px;
-                                    text-align:left;
-                                    img{
-                                        top: 0;
-                                        width: 150px;
-                                    }
-                                }
-                            }
-                            .titles-about{
-                                margin: 4px 0;
-                            }
-                        }
-                        .suggestions-section{
-                            .top-section{
-                                flex-direction: column;
-                            }
-                            .bottom-section{
-                                flex-direction: column;
-                                width: 100%;
-                            }
-                            .left-section{
-                                display: flex;
-                                .tile-container{
-                                    padding: 5px 2px;
-                                    display: -webkit-box;
-                                    overflow-x: scroll;
-                                    .tile{
-                                        width: 120px;
-                                        max-width: unset;
-                                        display: flex;
-                                        img{
-                                            min-width: 100px;
-                                            max-height: 100px;
-                                        }
-                                    }
-                                }
-                            }
-                            .right-section{
-                                padding: 2px 2px;
-                                display: flex;
-                                width: 100%;
-                                .tile-container{
-                                    padding: 5px 0px;
-                                    flex-direction: row;
-                                    max-width: unset;
-                                    display: -webkit-box;
-                                    overflow-x: scroll;
-                                    gap: 5px;
-                                    width: 100%;
-                                    .tile{
-                                        width: 100%;
-                                        max-width: 200px;
-                                        display: flex;
-                                        img{
-                                            width: fit-content;
-                                            min-width: 50px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .right{
-                        width: 100%;
-                        max-width: unset;
-                        min-width: unset;
-                        background-color: rgba(153, 153, 153, 0.247);
-                        .proposal-section{
-                            flex-direction: row;
-                        }
-                        .titles-about{
-                            margin: 0;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
     }
 }

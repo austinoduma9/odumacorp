@@ -17,3 +17,39 @@ function showNextSlide() {
 
 // Rotate carousel every 3 seconds
 setInterval(showNextSlide, 3000);
+
+/////
+const register = document.getElementById("register");
+        const login = document.getElementById("login");
+        const card = document.querySelector(".card");
+
+        function showLogin(){
+            login.showModal();
+        }
+        function closeDialog(){
+            register.close();
+            login.close();
+        }
+        function showRegister(){
+            register.showModal();
+        }
+        // function goBack(){
+        //         window.location.href ="./bio.html";
+        // }
+        register.addEventListener("click", (e) => {
+            if(!card.contains(e.target)){
+                register.close();
+            }
+        });
+        login.addEventListener("click", (e) => {
+            if(!card.contains(e.target)){
+                login.close();
+
+            }
+        });
+
+
+//////
+
+        
+    
