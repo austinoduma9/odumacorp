@@ -14,6 +14,10 @@ function showNextSlide() {
 //   carouselItems[currentIndex].style.visibility = "hidden"
 
 }
+function backHome(){
+    window.location.href = "index.html";
+    Window.location.reload();
+}
 
 // Rotate carousel every 3 seconds
 setInterval(showNextSlide, 3000);

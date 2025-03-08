@@ -89,11 +89,13 @@ html body .nav-bar .logo-section {
 html body .nav-bar .logo-section span {
   font-size: 1.5vw;
   text-wrap: nowrap;
-  mix-blend-mode: difference;
 }
 html body .nav-bar .logo-section img {
   width: 4vw;
   z-index: 1;
+}
+html body .nav-bar .menu-btn {
+  visibility: hidden;
 }
 html body .nav-bar nav {
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.144));
@@ -142,11 +144,13 @@ html .btns {
 html .btns .menu-btn {
   display: none;
 }
+html .btn, html button {
+  cursor: pointer;
+}
 html button {
   background-color: #004AAD;
   color: white;
   border: unset;
-  cursor: pointer;
   padding: 5px 10px;
   width: -moz-fit-content;
   width: fit-content;
@@ -436,18 +440,12 @@ html .container #mid .card .tile img {
   background-color: rgba(193, 192, 194, 0.3098039216);
   border-radius: 10px;
   margin-right: 3px;
-  content: url("/images/hero_img.jpg");
   transition: 0.5s;
-}
-html .container #mid .card .tile img:hover {
-  box-shadow: 1px 1px 6px 0px rgb(124, 124, 124);
-  transform: translateY(-1px);
 }
 html .container #mid .card .tile span {
   font-weight: bold;
 }
 html .container #mid .card .tile img:hover {
-  transform: translateY(-2px);
   background: linear-gradient(60deg, rgba(124, 123, 123, 0.4), rgba(102, 102, 102, 0.4), rgba(212, 210, 210, 0.4), rgba(231, 231, 231, 0.4), rgba(185, 184, 184, 0.4));
 }
 html .container #mid .card .idea-action1 {
@@ -465,7 +463,7 @@ html .container #mid .card .that-viewed .head {
   padding: 10px;
 }
 html .container #mid .card .that-viewed .tile-container {
-  overflow: hidden;
+  overflow: scroll;
   gap: 5px;
   display: flex;
   height: -moz-fit-content;
@@ -480,7 +478,13 @@ html .container #mid .card .that-viewed .tile-container .tile {
   box-shadow: 1.5px 1.5px 2px 0px rgba(100, 100, 100, 0.404);
 }
 html .container #mid .card .that-viewed .tile-container .tile img {
-  max-height: 50px;
+  -webkit-mask-image: linear-gradient(to right, black, transparent);
+  mask-image: linear-gradient to right, black, transparent;
+  height: 100%;
+}
+html .container #mid .card .that-viewed .tile-container .tile img:hover {
+  transform: translateX(-2px);
+  z-index: 3;
 }
 html .container #mid .card .that-viewed .tile-container .titles-about {
   margin: 4px 0;
@@ -526,6 +530,8 @@ html .container #mid .suggestions-section .left-section .tile-container {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
+  max-height: 30vh;
+  height: 30vh;
 }
 html .container #mid .suggestions-section .left-section .tile-container .titles-about {
   -webkit-line-clamp: 2;
@@ -538,12 +544,16 @@ html .container #mid .suggestions-section .left-section .tile {
   flex-direction: column;
   max-width: 85px;
   align-items: center;
-  padding: 8px;
 }
 html .container #mid .suggestions-section .left-section .tile img {
-  max-width: 60px;
   max-height: 100px;
-  min-height: 40px;
+  min-width: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+  mask-image: linear-gradient to bottom, black, transparent;
+}
+html .container #mid .suggestions-section .left-section .tile img:hover {
+  transform: translateY(-2px);
+  z-index: 3;
 }
 html .container #mid .suggestions-section .left-section .tile button {
   justify-content: center;
@@ -559,15 +569,25 @@ html .container #mid .suggestions-section .right-section .tile-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow-y: scroll;
+  max-height: 30vh;
+  height: 30vh;
 }
 html .container #mid .suggestions-section .right-section .tile-container .tile {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 230px;
+  max-height: 100px;
 }
 html .container #mid .suggestions-section .right-section .tile-container .tile img {
   max-width: 100px;
+  -webkit-mask-image: linear-gradient(to right, black, transparent);
+  mask-image: linear-gradient to right, black, transparent;
+}
+html .container #mid .suggestions-section .right-section .tile-container .tile img:hover {
+  transform: translateX(-2px);
+  z-index: 3;
 }
 html .container #mid .suggestions-section .right-section .tile-container .tile .titles-about {
   overflow: hidden;
@@ -609,33 +629,28 @@ html .container #mid .right .proposal-section .tile {
 html .container #mid .right .proposal-section .tile .info {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0px;
   justify-content: center;
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
 }
 html .container #mid .right .proposal-section .tile .info img {
-  width: 40px;
-  height: 40px;
-  font-size: 7px;
+  max-height: 5vh;
   background-color: rgba(193, 192, 194, 0.3098039216);
   border-radius: 10px;
-  margin-right: 3px;
   transition: all 1.6s;
-  content: url("/images/hero_img.jpg");
-  transition: 1s;
+  -webkit-mask-image: linear-gradient(to right, black, transparent);
+  mask-image: linear-gradient to right, black, transparent;
+  height: 100%;
 }
 html .container #mid .right .proposal-section .tile .info img:hover {
-  box-shadow: 1px 1px 6px 0px rgb(124, 124, 124);
-  transform: translateY(-1px);
+  transform: translateX(-2px);
+  z-index: 3;
+  background: linear-gradient(60deg, rgba(124, 123, 123, 0.4), rgba(102, 102, 102, 0.4), rgba(212, 210, 210, 0.4), rgba(231, 231, 231, 0.4), rgba(185, 184, 184, 0.4));
 }
 html .container #mid .right .proposal-section .tile .info span {
   font-weight: bold;
-}
-html .container #mid .right .proposal-section .tile .info img:hover {
-  transform: translateY(-2px);
-  background: linear-gradient(60deg, rgba(124, 123, 123, 0.4), rgba(102, 102, 102, 0.4), rgba(212, 210, 210, 0.4), rgba(231, 231, 231, 0.4), rgba(185, 184, 184, 0.4));
 }
 html .container #mid .right .proposal-section .tile .interest-section {
   color: #636363;
