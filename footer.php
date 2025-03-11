@@ -9,7 +9,5 @@
 
   echo '</footer>';
 ?>
- <?php
-    // require_once "login.php";
-  ?>
+
 

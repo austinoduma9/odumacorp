@@ -308,7 +308,7 @@ html{
                         }
                         input[type="file"]::file-selector-button {
                             height: fit-content;
-                            font-size: 8px;
+                            font-size: 1.4vh;
                             color: rgb(61, 61, 61);
                             padding: 2px 4px;
                             border: 1px solid rgb(152, 149, 149);
@@ -316,8 +316,8 @@ html{
                             cursor: pointer;
                         }
                         select{
-                            background: linear-gradient(#b9b9b9c0,80%,rgba(189, 189, 189, 0.11));
-                            border-radius: 7px 7px 0px 0px ;
+                            // background: linear-gradient(#b9b9b9c0,80%,rgba(189, 189, 189, 0.11));
+                            // border-radius: 7px 7px 0px 0px ;
                             border: solid 0px rgba(87, 85, 85, 0.192);
                             outline: unset;
                             transition: 1s;
@@ -563,10 +563,14 @@ html{
                         display:grid;
                         grid-template-columns: auto auto;
                         gap: 10px;
-                        max-height: 30vh;
-                        height: 30vh;
+                        // max-height: 30vh;
+                        // height: fit-content;
 
                         // background-color: #004AAD;
+                        overflow-y: scroll;
+                        -webkit-box-orient: vertical;
+                        max-height: 30vh;
+                        height: 30vh;
                         .titles-about{
                             -webkit-line-clamp: 2;
                         }

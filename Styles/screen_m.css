@@ -2,7 +2,11 @@
   html body {
     width: 100%;
     padding: 0px;
-    margin-bottom: 35px !important;
+    margin-bottom: 40px !important;
+  }
+  html body #footer {
+    visibility: hidden;
+    display: none;
   }
   html body #navbar {
     display: flex;
@@ -174,6 +178,15 @@
     border-radius: unset !important;
     border: unset;
     padding: 15px 5px;
+  }
+  html body .container #mid .section .user-info ul > * {
+    text-wrap: nowrap;
+  }
+  html body .container #mid .section .post-section {
+    padding: 0 1vh !important;
+  }
+  html body .container #mid .section .idea-info {
+    padding: 0 5vh;
   }
   html body .container #mid .section .card {
     border-radius: unset;
@@ -438,7 +451,7 @@
     max-width: unset;
     overflow-x: scroll;
     gap: 5px;
-    width: 100%;
+    width: unset;
   }
   html body .container #mid .center .idea-section .suggestions-section .right-section .tile-container .tile {
     width: 100%;
@@ -458,11 +471,29 @@
     min-width: unset !important;
   }
   html body .container #mid .right .proposal-section {
-    flex-direction: row;
+    flex-direction: column;
   }
-  html body .container #mid .right .titles-about {
+  html body .container #mid .right .proposal-section .tile {
+    padding: unset;
+  }
+  html body .container #mid .right .proposal-section .tile .info {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 0px;
+    justify-content: unset;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 5px;
+  }
+  html body .container #mid .right .proposal-section .tile .info img {
+    background-color: aqua;
+    width: 100%;
+    max-height: unset;
+  }
+  html body .container #mid .right .proposal-section .tile .titles-about {
     margin: 0;
-    text-align: center;
+    text-align: start;
   }
   html body .header {
     height: 70vh;
@@ -485,8 +516,20 @@
   html body .header .hero-section .div-button button {
     font-size: 1.8vh !important;
   }
+  html body .about-section {
+    padding: unset;
+    width: unset;
+  }
   html body .about-section h1, html body .about-section h4 {
     font-size: 4vw;
+  }
+  html body .about-section .company-description {
+    border-radius: unset !important;
+    box-shadow: unset !important;
+    padding: 0 !important;
+  }
+  html body .about-section .company-description p {
+    text-align: justify;
   }
   html body .about-section .section-container .section {
     display: flex;

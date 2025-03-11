@@ -299,7 +299,7 @@ html .container #mid .center .post-section fieldset input {
 html .container #mid .center .post-section fieldset input[type=file]::file-selector-button {
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 8px;
+  font-size: 1.4vh;
   color: rgb(61, 61, 61);
   padding: 2px 4px;
   border: 1px solid rgb(152, 149, 149);
@@ -307,8 +307,6 @@ html .container #mid .center .post-section fieldset input[type=file]::file-selec
   cursor: pointer;
 }
 html .container #mid .center .post-section fieldset select {
-  background: linear-gradient(rgba(185, 185, 185, 0.7529411765), 80%, rgba(189, 189, 189, 0.11));
-  border-radius: 7px 7px 0px 0px;
   border: solid 0px rgba(87, 85, 85, 0.192);
   outline: unset;
   transition: 1s;
@@ -530,6 +528,8 @@ html .container #mid .suggestions-section .left-section .tile-container {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
+  overflow-y: scroll;
+  -webkit-box-orient: vertical;
   max-height: 30vh;
   height: 30vh;
 }

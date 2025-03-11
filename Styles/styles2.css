@@ -454,11 +454,21 @@ body .about-section div .section img {
   border: 2px solid white;
   filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.339));
   flex-grow: inherit;
+  transition: ease-in-out 1.5s;
+}
+body .about-section div .section img:hover, body .about-section div .section img:focus {
+  border: unset;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 body .about-section div .company-description {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  gap: 10px;
 }
 body .about-section div .company-description p {
   padding: 0;
+  max-width: 100%;
+  text-align: unset;
 }/*# sourceMappingURL=styles2.css.map */

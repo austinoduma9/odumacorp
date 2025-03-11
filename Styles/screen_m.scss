@@ -7,13 +7,16 @@ html{
 
     // width: 100%;
     // background-color: bisque;
-    body{
-      width: 100%;
-      padding: 0px;
-      // margin-bottom: 35px;
-      // background-color: aqua;
-       
-              margin-bottom: 35px !important; 
+            body{
+              width: 100%;
+              padding: 0px;
+              // margin-bottom: 35px;
+              // background-color: aqua;
+              margin-bottom: 40px !important; 
+              #footer{
+                visibility: hidden;
+                display: none;
+              }
               #navbar{
                 // background-color: saddlebrown;
                 display: flex;
@@ -235,6 +238,21 @@ html{
                 border-radius: unset !important;
                 border: unset;
                 padding: 15px 5px;
+                .user-info{
+                  ul > *{
+                    // background-color: bisque;
+                    text-wrap: nowrap;
+                  }
+                }
+                .post-section{
+                  // background-color: aquamarine;
+                  padding: 0 1vh !important;
+
+                }
+                .idea-info{
+                  // background-color: aquamarine;
+                  padding: 0 5vh;
+                }
                 .card{
                   border-radius: unset;
                   border: unset;
@@ -546,6 +564,9 @@ html{
                    
                   }
                   .suggestions-section{
+                    // padding: 0 0 50px 0 !important;
+                    // padding-bottom: 50px !important;
+                    // background-color: aquamarine;
                     .top-section{
                         flex-direction: column;
                     }
@@ -559,6 +580,7 @@ html{
                             padding: 5px 2px;
                             display: -webkit-box;
                             overflow-x: scroll;
+                            // background-color: aquamarine !important;
                             .tile{
                                 width: 120px;
                                 max-width: unset;
@@ -581,7 +603,7 @@ html{
                             // display: -webkit-box;
                             overflow-x: scroll;
                             gap: 5px;
-                            width: 100%;
+                            width: unset;
 
 
                             // display: flex;
@@ -619,13 +641,37 @@ html{
                 max-width: unset !important;
                 min-width: unset !important;
                 .proposal-section{
-                    flex-direction: row;
+                    flex-direction: column;
+                    .tile{
+                      // background-color: saddlebrown;
+                      padding: unset;
+                      .info{
+                        display: grid ;
+                          grid-template-columns: 50% auto;
+                          gap: 0px;
+                          justify-content: unset;
+                          align-items: center;
+                          width: -moz-fit-content;
+                          width: fit-content;
+                          margin-bottom: 5px;
+                          // background-color: aqua !important;
+                          img{
+                            background-color: aqua;
+                            // padding: 5px;
+                            width: 100%;
+                            max-height: unset;
+                            // height: 50vh;
+                          }
+                          
+                       }
+                       .titles-about{
+                        margin: 0;
+                        text-align: start;
+                      }
+
+                    }
                 }
-                .titles-about{
-                    margin: 0;
-                    text-align: center;
-                }
-              }
+            }
           }
        }
       .header{
@@ -658,8 +704,20 @@ html{
         }
       }
       .about-section{
+        // background-color: aquamarine;
+        padding: unset;
+        width: unset;
         h1, h4{
           font-size: 4vw;
+        }
+        .company-description{
+          // background-color: aquamarine;
+          border-radius: unset !important;
+          box-shadow: unset !important;
+          padding: 0 !important;
+          p{
+            text-align: justify;
+          }
         }
         .section-container{
           .section{
