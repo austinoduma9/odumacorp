@@ -15,6 +15,9 @@ html body {
   margin: 0;
   overflow-x: hidden;
 }
+html body #navbar2 {
+  display: none;
+}
 html body .search {
   justify-items: right;
   gap: 20px;

@@ -17,6 +17,123 @@ html{
                 visibility: hidden;
                 display: none;
               }
+              #navbar2{
+                // background-color: rgb(13, 123, 219);
+                // visibility: hidden;
+                // display: none;
+                height: 0;
+                .nav-bar{
+                  // background-color: red;
+                  // display: none;
+                  visibility: hidden;
+
+                }
+                nav{
+                  padding: 0px;
+                  position: fixed;
+                  display: flex;
+                  bottom: 0px;
+                  right: 0px;
+                  width: 100%;
+                  height: 4rem;
+                  z-index: 1;
+                  backdrop-filter: blur(30px) !important;
+                  -webkit-backdrop-filter: blur(30px) !important;
+                  background-color: unset;
+                  justify-content: center;
+                  align-items: center;
+                  justify-self: center;
+                  box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.377) !important;
+                  // background-color: chocolate !important;
+                  ul{
+      
+                      height: 100%;
+                      width: 100%;
+                      background-color: unset;
+                      border-radius: unset;
+                      margin-top: unset;
+                      margin-bottom: unset;
+                      // background-color: rgba(0, 0, 0, 0.421);
+                      color:unset;
+                      justify-self: unset;
+                      // padding:10px 5px;
+                      transform:unset;
+                      justify-items:center;
+                      align-items: center;
+                      align-content: center;
+                      display: flex;
+                      padding: 0;
+                      // background-color: aqua;
+                      // mix-blend-mode:lighten;
+
+      
+                      li{
+                        // mix-blend-mode:lighten;
+
+                          visibility: visible;
+                          content: "";
+                          width: 100%;
+                          display: flex;
+                          justify-content:center;
+                          align-content: center;
+                          font-size: unset;
+                          align-self: unset;
+                          max-width: unset;
+                          transition: all 1s;  
+                          padding: 0;
+                          gap: 3vw;
+
+                          // background-color: aquamarine;
+                
+                          a{
+                            // mix-blend-mode:lighten;
+
+                            transition: all 1s;  
+      
+                            width: 7vw;
+                            padding: 0;
+                            &:hover{
+                              transform:  translateY(-7px);
+                              // padding: 0px;
+                              filter:drop-shadow(-3px 3px 3px   rgba(0, 0, 0, 0.575));
+                          }
+                            &:nth-of-type(1){
+                              // visibility: visible;
+                              content: url("../images/Icons/Oduma Corp New Logo.png");
+                            }
+                            &:nth-of-type(2){
+                                content: url("../images/Icons/network.png");
+                            }
+                            &:nth-of-type(3){
+                                content: url("../images/Icons/icons8-index-96.png");
+                            }
+                            &:nth-of-type(4){
+                                content: url("../images/Icons/icons8-service-60.png");
+                            }
+                            &:nth-of-type(5){
+                                content: url("../images/Icons/icons8-event-96.png");
+                            }
+                            &:nth-of-type(6){
+                                content: url("../images/Icons/icons8-people-96.png");
+                            }
+                            &:nth-of-type(7){
+                                content: url("../images/Icons/suitcase.png");
+                            }
+                            &:nth-of-type(8){
+                                content: url("../images/Icons/icons8-sms-96.png");
+                            }
+                            &:nth-of-type(9){
+                              content: url("../images/Icons/icons8-notification-96.png");
+                            }
+                            &:nth-of-type(10){
+                              content: url("../images/Icons/icons8-pie-chart-96.png");
+                            }
+                          }
+                      }
+                  }
+                }
+
+              }
               #navbar{
                 // background-color: saddlebrown;
                 display: flex;
@@ -678,7 +795,7 @@ html{
         height: 70vh;
         .hero-section{
           .mission-vision{
-            background-color: aqua ;
+            // background-color: aqua ;
             width: 100% !important;
             border: 0 !important;
             font-size: 1.4vh !important;

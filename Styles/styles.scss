@@ -20,6 +20,9 @@ html{
         margin: 0;
         overflow-x: hidden;
         // background-color: #4d3d3d;
+        #navbar2{
+            display: none;
+        }
         .search{
             justify-items: right;
             gap: 20px;

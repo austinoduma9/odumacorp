@@ -6,6 +6,13 @@ fetch("navbar.html")
     document.getElementById("navbar").innerHTML = data;
 }).catch(error => console.error("Error loading PHP:", error));
 
+
+fetch("navbar.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("navbar2").innerHTML = data;
+}).catch(error => console.error("Error loading PHP:", error));
+
 //to fetch the footer
 fetch("footer.php")
 .then(response => response.text())
