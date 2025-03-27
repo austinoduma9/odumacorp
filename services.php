@@ -1,0 +1,85 @@
+<?php
+    require_once 'navbar.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!-- <link rel="stylesheet" href="Styles/styles2.css"> -->
+</head>
+<body>
+    <section class="section-services">
+        <h1>Our Services</h1>
+        <div id="invention-support">
+            <img class="image" src="./images/social-media.png" alt="image1">
+            <div>
+                <h3>Invention Support</h3>
+                <p>
+                    For inventors with cutting-edge ideas that can solve 
+                    real- world issues, Oduma Corp provides both technical 
+                    and financial support.
+                    We help:
+                </p>
+                <ul>
+                    <li>Protect intellectual property and safeguard innovative ideas.</li>
+                    <li>Commercialize inventions and bring ideas to market.</li>
+                    <li>Connect inventors to investors/sponsors who can accelerate
+                        their product development and growth.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="innovation-consulting">
+            <img src="images/support.png" alt="image2">
+            <div>
+                <h3>Innovation Consulting</h3>
+                <p>
+                    We help organizations and individuals unlock new opportunities 
+                    by guiding and holding their hands throughout every step of the
+                    innovation process - from idea generation, to conceptualization
+                    to market implementation. Our team works with clients to:
+                </p>
+                <ul>
+                    <li>Indentify opportunities and generate breakthrough ideas</li>
+                    <li>Prototype and test solutions to validate their impact</li>
+                    <li>Launch these innovations in the market successfully.</li>
+                    <p>Additionally, we support clients in pitching their solutions
+                        to potential investors, helping them secure the necessary 
+                        funding to bring their ventures to life.
+                    </p>
+                </ul>
+            </div>
+        </div>
+
+        <div id="innovation-training">
+            <img src="images/diagram.png" alt="image3">
+            <div>
+                <h3>Innovation Training</h3>
+                <p>
+                    We offer comprehensive workshops and courses designed to inspire 
+                    innovation and entrepreneurship. Our training covers topics such as:
+                    <ul>
+                        <li>Design thinking and creativity.</li>
+                        <li>Entrepreneurship and intellectual property</li>
+                        <li>Practical skills for turning ideas into commercial products.</li>
+                        <p>
+                            Our trainees also benefit from mentorship opportunities and access 
+                            to an extensive network of innovators and investors.
+                        </p>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+</section>
+</body>
+</html>
+
+<?php
+    require_once 'footer.php';
+?>
+
+
